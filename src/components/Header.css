@@ -1,0 +1,20 @@
+.header {
+    padding: 1rem 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: royalblue;
+    color: white;
+    flex-wrap: wrap;
+}
+.author {
+    white-space: nowrap;
+}
+.logo img {
+    width: 40px;
+    filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(116deg) brightness(109%) contrast(109%);
+    transition: 0.2s;
+}
+.logo img:hover {
+    filter: invert(74%) sepia(33%) saturate(5865%) hue-rotate(325deg) brightness(101%) contrast(101%);
+}

@@ -1,38 +1,70 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.records {
+    border: 4px solid royalblue;
+    width: min(80vw, 600px);
+    margin: 2rem auto;
+    padding: 1rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.stat {
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.count {
+    font-weight: bold;
 }
-
-.App-link {
-  color: #61dafb;
+.new-game {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: royalblue;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.6rem;
+    transition: 0.2s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new-game:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+.info {
+    margin-bottom: 0.6rem;
+}
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    margin-bottom: 1rem;
+}
+.first-game {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: royalblue;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.1s;
+}
+.first-game:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+.clear-button {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: grey;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: 0.1s;
+}
+.clear-button:hover {
+    background-color: red;
+    cursor: pointer;
 }
