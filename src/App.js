@@ -33,8 +33,7 @@ function App() {
         list_records.sort((a, b) => (a.strikes > b.strikes ? 1 : -1));
         list_records.sort((a, b) => (a.strikes === b.strikes ? (a.time > b.time ? 1 : -1) : -1));
         setRecords(list_records);
-        console.log(old_records);
-        console.log("hey");
+        
     };
 
     const saveMatch = () => {
@@ -44,11 +43,10 @@ function App() {
             strikes,
             time,
         };
-        console.log(records);
-        console.log("hey2");
+       
         let old_records = { ...records };
         old_records = { ...old_records, record };
-        console.log(old_records);
+     
         let list_records = Object.keys(old_records).map((key) => {
             return old_records[key];
         });
