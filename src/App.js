@@ -31,7 +31,7 @@ function App() {
             return old_records[key];
         });
         list_records.sort((a, b) => (a.strikes > b.strikes ? 1 : -1));
-        list_records.sort((a, b) => (a.strikes == b.strikes ? (a.time > b.time ? 1 : -1) : -1));
+        list_records.sort((a, b) => (a.strikes === b.strikes ? (a.time > b.time ? 1 : -1) : -1));
         setRecords(list_records);
         console.log(old_records);
         console.log("hey");
@@ -60,8 +60,10 @@ function App() {
 
     //Effects
     useEffect(() => {
-        if (isDone) saveMatch();
-    }, [isDone]);
+        if (isDone) {
+          saveMatch();
+        }
+    }, [isDone]); // eslint-disable-line react-hooks/exhaustive-deps
 
     useEffect(() => {
         getRecords();
